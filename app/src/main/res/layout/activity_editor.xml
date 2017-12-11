@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for the editor -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    tools:context=".EditorActivity">
+
+    <!-- Overview category -->
+    <!-- Input fields -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            style="@style/EditorFieldStyle"
+            android:text="@string/name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            style="@style/EditorFieldStyle"
+            android:text="@string/quantity"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            style="@style/EditorFieldStyle"
+            android:text="@string/price"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            style="@style/EditorFieldStyle"
+            android:text="@string/sup_name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            style="@style/EditorFieldStyle"
+            android:text="@string/sup_email"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            style="@style/EditorFieldStyle"
+            android:text="@string/phone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4dp">
+
+        <EditText
+            android:id="@+id/edit_name"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_name"
+            android:inputType="textCapWords" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btSub"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="@string/minus"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_quantity"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_quantity"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btAdd"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="@string/plus"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_price"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_price"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edit_sup_name"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_sup_name"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/edit_sup_email"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_sup_email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/edit_sup_phone"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_phone"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/callSup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/call_sup"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+
